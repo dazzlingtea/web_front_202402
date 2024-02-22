@@ -1,0 +1,27 @@
+main {
+    border: 1px dotted red;
+    display: flex;
+    flex-wrap : wrap;
+    flex-direction: row;
+    justify-content: left;
+    align-items: stretch;
+    /* height: 200px; */
+  }
+  
+  div {
+    border: 1px solid green;
+  }
+  
+  * {
+    margin: 10px;
+    padding: 10px;
+  }
+  #box1 {
+    flex: 1 1 auto;
+  }
+  #box2 {
+    flex: 1 1 auto;
+  }
+  #box3 {
+    flex: 1 1 auto;
+  }

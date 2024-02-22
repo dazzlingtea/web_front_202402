@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+ background-color: rgb(71, 72, 77);
+ color: azure;
+ width: 200px;
+ border-radius: 10px;
+}
+
+.output {
+ text-align: right;
+ padding-top: 1.5rem;
+ padding-right: 1rem;
+ font-size: 2rem;
+}
+.input {
+    border-radius: 10px;
+}
+button {
+    background-color: rgb(139, 139, 155);
+    color:azure;
+    font-size: 1.3rem;
+    width: 50px;
+    height: 50px;
+}
+.operation {
+    background-color: orange;
+}
+#keyline1 {
+ display: flex;
+ flex-wrap: wrap;
+ border-top: 1px solid black;
+}
+#keyline1 > button {
+ text-align: center;
+ border-right: 1px solid black;  
+}
+#keyline2 {
+ display: flex;
+ flex-wrap: wrap;
+ border-top: 1px solid black;
+}
+#keyline2 > button {
+    text-align: center;
+    border-right: 1px solid black;   
+}
+#keyline3 {
+ display: flex;
+ flex-wrap: wrap;
+ border-top: 1px solid black; 
+}
+#keyline3 > button {
+    text-align: center;
+    border-right: 1px solid black;   
+}
+#keyline4 {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid black; 
+   }
+   #keyline4 > button {
+       text-align: center;
+       border-right: 1px solid black;   
+   }
+#keyline5 {
+ display: flex;
+ flex-wrap: wrap;
+ border-top: 1px solid black; 
+}
+#keyline5 > span {
+    text-align: center;
+    border-right: 1px solid black;   
+}
+#key-0 {
+    flex: 2 1 auto;
+    border-radius: 0 0 0 10px;
+}
+#key-dot {
+    flex: 0 1 auto;
+}
+#key-equal {
+    flex: 0 1 auto;
+    border-radius: 0 0 10px 0;
+}
