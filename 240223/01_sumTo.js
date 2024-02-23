@@ -8,3 +8,6 @@ function sumTo(num) {
     }
     return sum;
 }
+
+console.log(sumTo(5));
+console.log(sumTo(0));
