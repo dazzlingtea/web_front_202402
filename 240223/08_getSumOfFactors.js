@@ -20,3 +20,8 @@ function getSumOfFactors(num) {
 }
 
 console.log(getSumOfFactors(12));
+
+// sum = 1 + num 미리 1과 자기자신을 더해두고
+// for(let i = 2; i < num; i++)
+
+// 또는 제곱근 활용 (num / 제곱근 이하의 약수)

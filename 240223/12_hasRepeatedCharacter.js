@@ -4,19 +4,31 @@
 // - 이중 반복문(`double for loop`)을 사용해야 합니다.
 // - 빈 문자열을 입력받은 경우에는 `false`을 리턴해야 합니다.
 
+// function hasRepeatedCharacter(str) {
+//   let result = false;
+//   if(str === '') return result;
+//   else {
+//     for(let i = 0; i < str.length; i++) {
+//       for(let j = i+1; j < str.length; j++) {
+//         if(str[i] === str[j]) {
+//           result = true;
+//         }
+//       }
+//     }
+//     return result;
+//   }
+  
+// }
+
 function hasRepeatedCharacter(str) {
-  let result = false;
-  if(str === '') return result;
-  else {
     for(let i = 0; i < str.length; i++) {
       for(let j = i+1; j < str.length; j++) {
         if(str[i] === str[j]) {
-          result = true;
+          return true;
         }
       }
     }
-    return result;
-  }
+    return false;
   
 }
 

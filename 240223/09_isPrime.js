@@ -18,3 +18,7 @@ function isPrime(num) {
 }
 
 console.log(isPrime(12))
+
+// true false 불리언 타입은 바로 return 가능
+// if(num === 1) return false
+// for(let i = 2; i < num; i++)
