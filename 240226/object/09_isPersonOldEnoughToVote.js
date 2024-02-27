@@ -7,6 +7,8 @@ function isPersonOldEnoughToVote(person) {
     return person.age >= 18;
 }
 
+// 삼항연산자 권장
+
 let obj = {
     age: 19,
 };

@@ -16,6 +16,13 @@ function select(arr, obj) {
   return result;
 }
 
+// for(let key in obj) {
+//   if(arr.includes(key)) {   // if(arr.indexOf(key) !== -1)
+//     result[key] = obj[key];
+//   }
+//   return result;
+// }
+
 
 const arr = ['a', 'c', 'e'];
 const obj = { a: 1, b: 2, c: 3, d: 4 };

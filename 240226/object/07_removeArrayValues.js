@@ -9,6 +9,12 @@ function removeArrayValues(obj) {
         }
     }
 }
+// for in 
+// for(let key in obj) {
+//     if(Array.isArray(obj[key])) {
+//         delete obj[key];
+//     }
+// }
 
 
 const obj = {

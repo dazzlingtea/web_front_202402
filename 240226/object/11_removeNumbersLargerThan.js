@@ -8,12 +8,14 @@ function removeNumbersLargerThan(num, obj) {
     for (let key in obj) {
         if (obj.hasOwnProperty(key)) {
             value = obj[key];
-            if (typeof value === 'number') {
-                if(value > num) delete obj[key];
+            if (typeof value === 'number' && value > num) {
+                delete obj[key];
             }
         }
     }
 }
+
+
 
 const obj = {
     a: 8,

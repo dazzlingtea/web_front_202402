@@ -4,7 +4,7 @@
 // 별도의 리턴문(return statement)을 작성하지 않습니다.
 
 function addFullNameProperty(obj) {
-    obj.fullName = String(`${obj.firstName} ${obj.lastName}`);
+    obj.fullName = `${obj.firstName} ${obj.lastName}`;
 }
 
 const person = {
