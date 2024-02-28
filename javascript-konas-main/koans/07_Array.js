@@ -68,11 +68,11 @@ describe('Array에 대해서 학습합니다.', function () {
     passedByReference(arr);
     expect(arr[1]).to.equal('changed in function');
 
-    const assignedArr = arr;
+    const assignedArr = arr; // ['zero', 'changed in function', 'two', 'three', 'four', 'changed in assignedArr']
     assignedArr[5] = 'changed in assignedArr';
     expect(arr[5]).to.equal('changed in assignedArr');
 
-    const copiedArr = arr.slice();
+    const copiedArr = arr.slice(); // 깊은 복사
     copiedArr[3] = 'changed in copiedArr';
     expect(arr[3]).to.equal('three');
   });

@@ -72,8 +72,8 @@ describe('Spread syntax에 대해 학습합니다.', function () {
       return arguments;
     }
 
-    const restParams = getAllParamsByRestParameter('first', 'second', 'third');
-    const argumentsObj = getAllParamsByArgumentsObj('first', 'second', 'third');
+    const restParams = getAllParamsByRestParameter('first', 'second', 'third'); // ['first', 'second', 'third']
+    const argumentsObj = getAllParamsByArgumentsObj('first', 'second', 'third'); //{'0': 'first, '1': 'second', '2': 'third'}
 
     expect(restParams).to.deep.equal(['first', 'second', 'third']);
     expect(Object.keys(argumentsObj)).to.deep.equal(['0', '1', '2']);
@@ -93,7 +93,7 @@ describe('Spread syntax에 대해 학습합니다.', function () {
   });
 
   it('Rest Parameter는 전달인자의 수가 정해져 있지 않은 경우에도 유용하게 사용할 수 있습니다.', function () {
-    function sum(...nums) {
+    function sum(...nums) { // ...nums 배열, 배열의 모든 요소를 더하는 함수
       let sum = 0;
       for (let i = 0; i < nums.length; i++) {
         sum = sum + nums[i];

@@ -42,7 +42,7 @@ describe('구조 분해 할당(Destructuring Assignment)에 관해서', () => {
     const student = { name: '박해커', major: '물리학과' }
 
     const { name } = student
-    expect(name).to.eql('박해커',)
+    expect(name).to.eql('박해커')
   })
 
   it('rest/spread 문법을 객체 분해에 적용할 수 있습니다 #1', () => {
@@ -78,21 +78,21 @@ describe('구조 분해 할당(Destructuring Assignment)에 관해서', () => {
 
     const changedUser = {
       ...user,
-      name: '박해커',
+      name: '박해커',  // user의 name, age에 박해커, 20으로 덮어쓰기
       age: 20
     }
 
     const overwriteChanges = {
-      name: '박해커',
+      name: '박해커',  
       age: 20,
-      ...user
+      ...user         // user로 덮어쓰기
     }
 
     const changedDepartment = {
       ...user,
       company: {
         ...user.company,
-        department: 'Marketing'
+        department: 'Marketing'     // Marketing만 덮어쓰기
       }
     }
 

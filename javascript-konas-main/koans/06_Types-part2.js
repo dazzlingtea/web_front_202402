@@ -155,7 +155,7 @@ describe('primitive data type과 reference data type에 대해서 학습합니�
       },
     };
 
-    const boy = person.son;
+    const boy = person.son; // 얕은 복사 {age: 9} 이 객체의 주소
     boy.age = 20;
     expect(person.son.age).to.equal(20);
     expect(person.son === boy).to.equal(true);

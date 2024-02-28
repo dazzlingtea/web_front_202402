@@ -50,7 +50,7 @@ describe('Object에 대해서 학습합니다.', function () {
   });
 
   it("'this'는 method를 호출하는 시점에 결정됩니다.", function () {
-    const currentYear = new Date().getFullYear();
+    const currentYear = new Date().getFullYear(); // 2024
     const megalomaniac = {
       mastermind: 'James Wood',
       henchman: 'Adam West',
@@ -59,18 +59,18 @@ describe('Object에 대해서 학습합니다.', function () {
         return currentYear - this.birthYear;
       },
       changeBirthYear: function (newYear) {
-        this.birthYear = newYear;
+        this.birthYear = newYear; // 1970을 newYear로 
       },
     };
 
     expect(currentYear).to.equal(new Date().getFullYear());
-    expect(megalomaniac.calculateAge(currentYear)).to.equal(currentYear - 1970);
+    expect(megalomaniac.calculateAge(currentYear)).to.equal(currentYear - 1970);  // 54
 
     megalomaniac.birthYear = 2000;
-    expect(megalomaniac.calculateAge(currentYear)).to.equal(currentYear - 2000);
+    expect(megalomaniac.calculateAge(currentYear)).to.equal(currentYear - 2000); // 24 2024 - 2000
 
     megalomaniac.changeBirthYear(2010);
-    expect(megalomaniac.calculateAge(currentYear)).to.equal(currentYear - 2010);
+    expect(megalomaniac.calculateAge(currentYear)).to.equal(currentYear - 2010); // 14 2024 - 2010
 
   /**
    * !!Advanced [this.mastermind]? this.birthYear? this가 무엇일까요?
