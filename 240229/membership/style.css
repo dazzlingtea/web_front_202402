@@ -1,0 +1,16 @@
+body {
+    background-color: whitesmoke;
+
+}
+
+.hide {
+    display: none;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+fieldset {
+    border: 0px;
+    font-size: 0.8rem;
+}

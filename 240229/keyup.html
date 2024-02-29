@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>키보드를 누르고 놓으면 알림이 표시됩니다.</p>
+
+<script>
+// 키다운 같은 동작 다른 코드 1
+// document.addEventListener("keydown", function(event) {
+//   console.log("키 다운: " + event.key);
+// });
+
+// 키다운 같은 동작 다른 코드 2
+document.onkeydown = fnKeyDown;
+function fnKeyDown(event) {
+  console.log("키 다운: " + event.key);
+}
+
+// 키다운 같은 동작 다른 코드 3
+// document.onkeydown = function(event) {
+//   console.log("키 다운: " + event.key);
+// };
+
+document.addEventListener("keyup", function(event) {
+  console.log("키 업: " + event.key);
+});
+</script>
+
+</body>
+</html>

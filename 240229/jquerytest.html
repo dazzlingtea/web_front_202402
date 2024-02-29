@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>제이쿼리 키 다운 키 업</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+  
+    $(document).on("keydown", function(event) {
+    console.log("키 다운: " + event.key);
+    });
+    
+    $(document).on("keyup", function(event) {
+      console.log("키 업: " + event.key);
+    });
+  
+  // Input 예제
+  // $("#keyInput").keydown(function() {
+  //   console.log('키 다운');
+  // });
+  
+  // $("#keyInput").keyup(function() {
+  //   console.log('키 업');
+  // });
+  </script>
+  
+</body>
+</html>
+
